@@ -1,0 +1,116 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.imagem-container {
+  position: relative;
+}
+
+.texto-sobre-imagem {
+  position: absolute;
+  top: 80px;
+  margin: 0 auto;
+  width: 100%;
+  color: white;
+  font-size: 75px;
+  text-shadow: 4px 0 0 black;
+}
+
+.navegacao {
+  display: flex;
+  gap: 0.1rem;
+  margin-top: 1rem;
+  justify-content: space-between;
+  & > input {
+    visibility: hidden;
+  }
+  & > label {
+    width: 30%;
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    border-radius: 10px;
+    padding: 0.5rem 0;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+}
+
+.botao-navegacao {
+  width: 20%;
+  padding: 5px;
+  color: #461057;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: transparent;
+  border-radius: 5px;
+  font-size: 13px;
+
+  &:hover {
+    background-color: rgb(54, 15, 71);
+    color: white;
+  }
+}
+
+.container-item-cardapio {
+  display: flex;
+  width: 35rem;
+  padding: 1rem;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  box-shadow: -2px 2px 20px #002;
+  & > img {
+    height: 11rem;
+  }
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-basis: 60%;
+    flex-grow: 0;
+    & > h2 {
+      font-weight: 600;
+    }
+  }
+}
+
+
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.capa {
+  max-height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container-footer {
+  height: 10px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.footer {
+  background-color: #864d9791;
+  width: 100%;
+}
+
+.footer p {
+  color: #2b0b35;
+  font-size: 18px;
+}
+
+.footer a {
+  text-decoration: none;
+  font-weight: bold;
+}
